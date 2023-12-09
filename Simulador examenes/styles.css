@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.module-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.module-list-item {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.result {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
