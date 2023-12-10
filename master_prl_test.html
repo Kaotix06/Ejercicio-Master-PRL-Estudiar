@@ -28,7 +28,10 @@
     /* Estilo para los botones de módulos específicos */
     .module-list-item.fundamentos,
     .module-list-item.comunicacion,
-    .module-list-item.formacion {
+    .module-list-item.formacion,
+    .module-list-item.seguridad,
+    .module-list-item.higiene,
+    .module-list-item.ergonomia {
       color: #000;
       background-color: #ccc;
       /* Gris */
@@ -104,10 +107,8 @@
   <div>
     <h1>Simulador de Exámenes</h1>
     <ul class="module-list">
-      <!-- Agrega la clase 'fundamentos' al primer módulo -->
       <li class="module-list-item fundamentos" onclick="loadModule('modulo1')">Fundamentos y Marco Legal de la
         Prevención de Riesgos Laborales</li>
-      <!-- Agrega la clase 'comunicacion' al segundo módulo -->
       <li class="module-list-item comunicacion" onclick="loadModule('modulo2')">La Comunicación y La Negociación En La
         Prevención de Riesgos Laborales</li>
       <!-- Agrega más módulos según sea necesario -->
@@ -115,13 +116,13 @@
         Prevención de Riesgos Laborales
       </li>
       <!-- Agrega más módulos según sea necesario -->
-      <li class="module-list-item formacion" onclick="loadModule('modulo4')">Seguridad En El Trabajo
+      <li class="module-list-item seguridad" onclick="loadModule('modulo4')">Seguridad En El Trabajo
       </li>
       <!-- Agrega más módulos según sea necesario -->
-      <li class="module-list-item formacion" onclick="loadModule('modulo5')">Higiene Industrial
+      <li class="module-list-item higiene" onclick="loadModule('modulo5')">Higiene Industrial
       </li>
       <!-- Agrega más módulos según sea necesario -->
-      <li class="module-list-item formacion" onclick="loadModule('modulo6')">Ergonomía y Psicosociología Aplicada
+      <li class="module-list-item ergonomia" onclick="loadModule('modulo6')">Ergonomía y Psicosociología Aplicada
       </li>
       <!-- Agrega más módulos según sea necesario -->
     </ul>
@@ -5165,7 +5166,8 @@
                 ],
                 correctAnswer: "b"
               }
-            ]
+            ],
+            theory: "Aquí puedes colocar la información teórica para el tema 1."
           },
           tema3: {
             name: "Bloque 2. La higiene industrial como técnica preventive. Conceptos de Higiene Industrial (I)",
@@ -5346,7 +5348,8 @@
       }
       // Agrega más modulos según sea necesario
     }
-    function loadModule(moduleName) {
+
+function loadModule(moduleName) {
       const contentDiv = document.getElementById("content");
       contentDiv.innerHTML = "";
 
